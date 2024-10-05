@@ -1,0 +1,7 @@
+.list {
+  padding: 14px;
+}
+.cu-list > .cu-item .move {
+  bottom: 0 !important;
+}
+

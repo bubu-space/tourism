@@ -1,0 +1,76 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/spot/spot",
+    "pages/strategy/strategy",
+    "pages/service/service",
+    "pages/user/user",
+    "pages/home/children/news/news",
+    "pages/home/children/news/detail",
+    "pages/home/children/recommend/recommend",
+    "pages/home/children/recommend/detail",
+    "pages/home/children/introduce/introduce",
+    "pages/spot/detail",
+    "pages/strategy/detail",
+    "pages/service/children/weather/weather",
+    "pages/user/children/order/order",
+    "pages/user/children/about/about",
+    "pages/user/children/signup/signup",
+    "pages/user/children/signin/signin",
+    "pages/user/children/userInfo/userInfo",
+    "pages/user/children/plain/plain",
+    "pages/user/children/plain/detail",
+    "pages/service/children/traffic/traffic",
+    "pages/home/children/heritage/heritage",
+    "pages/home/children/heritage/detail",
+    "pages/spot/prebook",
+    "pages/user/children/order/detail",
+    "pages/user/children/order/comment"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarBackgroundColor": "#00C379"
+  },
+  "tabBar": {
+    "borderStyle": "white",
+    "color": "#999999",
+    "selectedColor": "#00C379",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "static/images/tabbar/home.png",
+        "selectedIconPath": "static/images/tabbar/home_color.png"
+      },
+      {
+        "pagePath": "pages/spot/spot",
+        "text": "景点",
+        "iconPath": "static/images/tabbar/spot.png",
+        "selectedIconPath": "static/images/tabbar/spot_color.png"
+      },
+      {
+        "pagePath": "pages/strategy/strategy",
+        "text": "攻略",
+        "iconPath": "static/images/tabbar/strategy.png",
+        "selectedIconPath": "static/images/tabbar/strategy_color.png"
+      },
+      {
+        "pagePath": "pages/service/service",
+        "text": "服务",
+        "iconPath": "static/images/tabbar/service.png",
+        "selectedIconPath": "static/images/tabbar/service_color.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "static/images/tabbar/user.png",
+        "selectedIconPath": "static/images/tabbar/user_color.png"
+      }
+    ]
+  },
+  "usingComponents": {
+    "empty": "/components/empty/empty",
+    "cu-custom": "/colorui/components/cu-custom"
+  }
+}

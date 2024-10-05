@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "景区动态",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "empty": "/components/empty/empty"
+  }
+}

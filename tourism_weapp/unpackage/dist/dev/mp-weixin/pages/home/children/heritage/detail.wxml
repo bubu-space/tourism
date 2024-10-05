@@ -1,0 +1,1 @@
+<view><view class="text-xl text-center">{{heritage.title}}</view><view class="divide margin-bottom-sm"></view><rich-text nodes="{{heritage.description}}"></rich-text></view>

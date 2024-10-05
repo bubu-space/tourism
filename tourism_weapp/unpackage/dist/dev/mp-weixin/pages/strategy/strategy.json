@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "攻略",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "empty": "/components/empty/empty"
+  }
+}

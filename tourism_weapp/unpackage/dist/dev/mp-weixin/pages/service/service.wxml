@@ -1,0 +1,23 @@
+<view>
+  <image class="haibao" src="https://ct.chuzhou.gov.cn/group4/M00/0D/4C/CpYIZmRu14WAaOW-AAFQsXK-oNA927.png" mode></image><text class="h2 title">游玩保障服务</text>
+  <view class="card_container">
+    <view data-event-opts="{{[['tap',[['callPhone',['12345']]]]]}}" class="item" style="background:linear-gradient(to bottom,#07BCDA,#00D7C7 );" bindtap="__e">
+      <view><text class="h3">旅游咨询</text><text>12301</text></view>
+      <view class="cuIcon-phone"></view>
+    </view>
+    <view data-event-opts="{{[['tap',[['callPhone',['12315']]]]]}}" class="item" style="background:linear-gradient(to bottom,#9C6DF7,#D780F1 );" bindtap="__e">
+      <view><text class="h3">投诉求助</text><text>投诉有效 实时高效</text></view>
+      <view class="cuIcon-edit"></view>
+    </view>
+  </view><text class="h2 title">旅游公共服务</text>
+  <view class="card_container">
+    <view data-event-opts="{{[['tap',[['toTraffic',['$event']]]]]}}" class="item" style="background:linear-gradient(to bottom,#FA8733,#FAA824);" bindtap="__e">
+      <view><text class="h3">公交信息</text><text>公交线路查询</text></view>
+      <view class="cuIcon-deliver"></view>
+    </view>
+    <view data-event-opts="{{[['tap',[['gotoWeather',['$event']]]]]}}" class="item" style="background:linear-gradient(to bottom,#2FD162,#7ADF65);" bindtap="__e">
+      <view><text class="h3">一周天气</text><text>一周天气 尽在掌握</text></view>
+      <view class=".cuIcon-favorfill"></view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,16 @@
+
+.avatar {
+	width: 33px;
+	height: 33px;
+	border-radius: 4px;
+}
+.action {
+	display: flex;
+	flex-direction: column;
+	padding: 50px 10px 0 10px;
+}
+.title {
+	width: 70px;
+	text-align: right;
+}
+

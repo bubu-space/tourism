@@ -1,0 +1,38 @@
+.spotList {
+  margin-top: 10px;
+  padding: 10px;
+}
+.spotList .spot_item {
+  display: flex;
+  gap: 10px;
+}
+.spotList .spot_item image {
+  width: 80px;
+  height: 80px;
+  border-radius: 4px;
+}
+.spotList .spot_item .content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.spotList .spot_item .content .title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.spotList .spot_item .content .address {
+  margin: 4px 0;
+}
+.spotList .spot_item .content .detail {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.spotList .spot_item .content .detail .price {
+  color: red;
+  font-weight: bold;
+  font-size: 16px;
+}
+

@@ -1,0 +1,32 @@
+page {
+  background-color: #fff !important;
+  padding: 12px !important;
+}
+.share {
+  position: fixed;
+  bottom: 100px;
+  right: 10px;
+}
+.share button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 12px;
+  padding: 0;
+  background-color: #EEEEEE;
+  width: 50px;
+  height: 50px;
+  line-height: 20px;
+}
+.share button .icon {
+  font-size: 14px;
+}
+.share button::after {
+  border: none;
+}
+.share button:active {
+  background-color: #EEEEEE;
+}
+

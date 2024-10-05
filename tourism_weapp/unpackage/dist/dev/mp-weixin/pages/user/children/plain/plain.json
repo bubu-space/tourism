@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "行程规划",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "empty": "/components/empty/empty"
+  }
+}

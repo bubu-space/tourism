@@ -1,0 +1,33 @@
+page {
+  padding: 14px;
+}
+.haibao {
+  width: 100%;
+  height: 120px;
+  border-radius: 10px;
+}
+.title {
+  margin: 14px 0;
+}
+.card_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 16px;
+}
+.card_container .item {
+  border-radius: 4px;
+  padding: 10px;
+  color: #FFF;
+  display: grid;
+  grid-template-columns: 1fr 40px;
+  align-items: center;
+}
+.card_container .item view:nth-child(2) {
+  background-color: rgba(255, 255, 255, 0.2);
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+}
+

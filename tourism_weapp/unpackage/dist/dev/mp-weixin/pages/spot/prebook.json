@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "订票",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "uni-notice-bar": "/uni_modules/uni-notice-bar/components/uni-notice-bar/uni-notice-bar",
+    "uni-datetime-picker": "/uni_modules/uni-datetime-picker/components/uni-datetime-picker/uni-datetime-picker"
+  }
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="vip.xiaonuo.client.modular.wxindex.mapper.IndexSpotMapper">
+    
+    <resultMap id="WxIndexSpotActivite" type="vip.xiaonuo.client.modular.wxindex.result.WxIndexSpotActivite">
+
+        <result column="image" property="image" typeHandler="vip.xiaonuo.biz.modular.spot.converter.SpotImageTypeHandler" />
+
+    </resultMap>
+
+    <select id="getSpotActivite" resultMap="WxIndexSpotActivite">
+        SELECT
+            biz_activitie.id,
+            biz_spot.spot_name,
+            biz_activitie.title,
+            biz_activitie.image,
+            biz_activitie.view_count,
+            biz_activitie.create_time
+        FROM
+            biz_activitie,
+            biz_spot
+        <where>
+            biz_spot.id = biz_activitie.spot_id
+            <if test="title != null">
+                AND biz_activitie.title LIKE CONCAT('%',#{title},'%')
+            </if>
+            and biz_activitie.delete_flag="NOT_DELETE"
+        </where>
+
+
+
+    </select>
+</mapper>

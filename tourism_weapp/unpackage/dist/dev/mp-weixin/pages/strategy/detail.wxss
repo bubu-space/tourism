@@ -1,0 +1,7 @@
+.screen-swiper {
+  height: 80vh;
+}
+.cu-bar.foot {
+  box-shadow: none;
+}
+

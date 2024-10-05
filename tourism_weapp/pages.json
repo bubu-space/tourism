@@ -1,0 +1,245 @@
+{
+	"pages": [{
+			"path": "pages/home/home",
+			"style": {
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/spot/spot",
+			"style": {
+				"navigationBarTitleText": "景点",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/strategy/strategy",
+			"style": {
+				"navigationBarTitleText": "攻略",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/service/service",
+			"style": {
+				"navigationBarTitleText": "服务",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/user/user",
+			"style": {
+				"navigationBarTitleText": "用户中心",
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/home/children/news/news",
+			"style": {
+				"navigationBarTitleText": "景区动态",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/home/children/news/detail",
+			"style": {
+				"navigationBarTitleText": "详细内容",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/home/children/recommend/recommend", 
+			"style": {
+				"navigationBarTitleText": "推荐",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path" : "pages/home/children/recommend/detail",
+			"style" : 
+			{
+				"navigationBarTitleText" : "推荐详情",
+				"enablePullDownRefresh" : false
+			}
+		},
+		{
+			"path" : "pages/home/children/introduce/introduce",
+			"style" : 
+			{
+				"navigationBarTitleText" : "景区概况",
+				"enablePullDownRefresh" : false
+			}
+		},
+		{
+			"path" : "pages/spot/detail",
+			"style" : 
+			{
+				"navigationBarTitleText" : "景区详情",
+				"enablePullDownRefresh" : false
+			}
+		},
+		{
+			"path" : "pages/strategy/detail",
+			"style" : 
+			{
+				"navigationBarTitleText" : "攻略详情",
+				"enablePullDownRefresh" : false
+			}
+		},
+		{
+			"path" : "pages/service/children/weather/weather",
+			"style" : 
+			{
+				"navigationBarTitleText" : "一周天气",
+				"enablePullDownRefresh" : false
+			}
+		},
+		{
+			"path" : "pages/user/children/order/order",
+			"style" : 
+			{
+				"navigationBarTitleText" : "我的订单",
+				"enablePullDownRefresh" : false
+			}
+		},
+		{
+			"path" : "pages/user/children/about/about",
+			"style" : 
+			{
+				"navigationBarTitleText" : "关于我们",
+				"enablePullDownRefresh" : false
+			}
+		},
+		{
+			"path" : "pages/user/children/signup/signup",
+			"style" : 
+			{
+				"navigationBarTitleText" : "注册",
+				"enablePullDownRefresh" : false
+			}
+		},
+		{
+			"path" : "pages/user/children/signin/signin",
+			"style" : 
+			{
+				"navigationBarTitleText" : "登录",
+				"enablePullDownRefresh" : false
+			}
+		},
+		{
+			"path" : "pages/user/children/userInfo/userInfo",
+			"style" : 
+			{
+				"navigationBarTitleText" : "用户信息",
+				"enablePullDownRefresh" : false
+			}
+		},
+		{
+			"path" : "pages/user/children/plain/plain",
+			"style" : 
+			{
+				"navigationBarTitleText" : "行程规划",
+				"enablePullDownRefresh" : false
+			}
+		},
+		{
+			"path" : "pages/user/children/plain/detail",
+			"style" : 
+			{
+				"navigationBarTitleText" : "行程详情",
+				"enablePullDownRefresh" : false
+			}
+		},
+		{
+			"path" : "pages/service/children/traffic/traffic",
+			"style" : 
+			{
+				"navigationBarTitleText" : "公交查询",
+				"enablePullDownRefresh" : false
+			}
+		},
+		{
+			"path" : "pages/home/children/heritage/heritage",
+			"style" : 
+			{
+				"navigationBarTitleText" : "文化遗产",
+				"enablePullDownRefresh" : false
+			}
+		},
+		{
+			"path" : "pages/home/children/heritage/detail",
+			"style" : 
+			{
+				"navigationBarTitleText" : "遗产详情",
+				"enablePullDownRefresh" : false
+			}
+		},
+		{
+			"path" : "pages/spot/prebook",
+			"style" : 
+			{
+				"navigationBarTitleText" : "订票",
+				"enablePullDownRefresh" : false
+			}
+		},
+		{
+			"path" : "pages/user/children/order/detail",
+			"style" : 
+			{
+				"navigationBarTitleText" : "订单详情",
+				"enablePullDownRefresh" : false
+			}
+		},
+		{
+			"path" : "pages/user/children/order/comment",
+			"style" : 
+			{
+				"navigationBarTitleText" : "订单评论",
+				"enablePullDownRefresh" : false
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarBackgroundColor": "#00C379"
+	},
+	"uniIdRouter": {},
+	"tabBar": {
+		"borderStyle": "white",
+		"color": "#999999",
+		"selectedColor": "#00C379",
+		"backgroundColor": "#ffffff",
+		"list": [{
+				"pagePath": "pages/home/home", //页面路径
+				"text": "首页", //按钮文字
+				"iconPath": "static/images/tabbar/home.png", //图片路径
+				"selectedIconPath": "static/images/tabbar/home_color.png" //选中的图片路径
+			},
+			{
+				"pagePath": "pages/spot/spot",
+				"text": "景点",
+				"iconPath": "static/images/tabbar/spot.png",
+				"selectedIconPath": "static/images/tabbar/spot_color.png"
+			},
+			{
+				"pagePath": "pages/strategy/strategy",
+				"text": "攻略",
+				"iconPath": "static/images/tabbar/strategy.png",
+				"selectedIconPath": "static/images/tabbar/strategy_color.png"
+			},
+			{
+				"pagePath": "pages/service/service",
+				"text": "服务",
+				"iconPath": "static/images/tabbar/service.png",
+				"selectedIconPath": "static/images/tabbar/service_color.png"
+			},
+			{
+				"pagePath": "pages/user/user",
+				"text": "我的",
+				"iconPath": "static/images/tabbar/user.png",
+				"selectedIconPath": "static/images/tabbar/user_color.png"
+			}
+		]
+	}
+}

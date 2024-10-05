@@ -1,0 +1,85 @@
+page{
+	background-color: #F7F7F7;
+	font-size: 12px;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+view{
+	box-sizing: border-box;
+}
+
+// 2号标题
+.h2{
+	display: block;
+	font-weight: bold;
+	font-size: 16px;
+	margin: 10px 0;
+	margin-top: 0;
+}
+
+// 3号标题
+.h3{
+	display: block;
+	font-weight: bold;
+	font-size: 14px;
+	margin: 8px 0;
+	margin-top: 0;
+}
+
+// 卡片
+.card{
+	box-sizing: border-box;
+	padding: 10px 16px;
+	background-color: #fff;
+	margin-top: 10px;
+}
+
+// 普通文本
+.weaktext{
+	color: #BCBDBE!important;
+}
+
+// 分割线
+.divide{
+	display: block;
+	border-bottom: 1px solid #f7f7f7;
+	padding: 4px 0;
+}
+
+.radius2{
+	border-radius: 2px;
+}
+
+.flex-gap-lg{
+	gap: 12px;
+}
+
+.flex-gap-sm{
+	gap: 8px;
+}
+
+.flex-gap-xs{
+	gap: 4px;
+}
+
+.cu-btn{
+	border-radius: 0;
+}
+
+.bg-light-gray{
+	background-color: #f7f7f7;
+}
+
+.btn-block{
+	display: block;
+	height: 40px;
+	line-height: 40px;
+}
+
+.uni-flex-item{display: flex; align-items: center; width:100%; } 
+
+.cu-form-group+.cu-form-group{
+	border-color: #F7F7F7;
+}

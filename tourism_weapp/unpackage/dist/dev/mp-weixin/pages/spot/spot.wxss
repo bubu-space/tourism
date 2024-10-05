@@ -1,0 +1,27 @@
+.search {
+  padding: 10px 14px;
+  background-color: #fff;
+}
+.search .inputbox {
+  padding: 8px;
+  background-color: #F7F7F7;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  border-radius: 4px;
+}
+.search .nav {
+  margin-top: 10px;
+}
+.search .nav .cu-item {
+  border-radius: 2px;
+  height: 26px;
+  line-height: 26px;
+  background-color: #F7F7F7;
+  color: #000;
+}
+.search .nav .cu-item.cur {
+  background-color: #FADBD9;
+  border-bottom: none;
+}
+
