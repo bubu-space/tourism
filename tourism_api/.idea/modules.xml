@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/snowy.iml" filepath="$PROJECT_DIR$/snowy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/snowy-common/snowy-common.iml" filepath="$PROJECT_DIR$/snowy-common/snowy-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/snowy-plugin/snowy-plugin.iml" filepath="$PROJECT_DIR$/snowy-plugin/snowy-plugin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/snowy-plugin-api/snowy-plugin-api.iml" filepath="$PROJECT_DIR$/snowy-plugin-api/snowy-plugin-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/snowy-plugin/snowy-plugin-auth/snowy-plugin-auth.iml" filepath="$PROJECT_DIR$/snowy-plugin/snowy-plugin-auth/snowy-plugin-auth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/snowy-plugin-api/snowy-plugin-auth-api/snowy-plugin-auth-api.iml" filepath="$PROJECT_DIR$/snowy-plugin-api/snowy-plugin-auth-api/snowy-plugin-auth-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/snowy-plugin/snowy-plugin-biz/snowy-plugin-biz.iml" filepath="$PROJECT_DIR$/snowy-plugin/snowy-plugin-biz/snowy-plugin-biz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/snowy-plugin-api/snowy-plugin-biz-api/snowy-plugin-biz-api.iml" filepath="$PROJECT_DIR$/snowy-plugin-api/snowy-plugin-biz-api/snowy-plugin-biz-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/snowy-plugin/snowy-plugin-client/snowy-plugin-client.iml" filepath="$PROJECT_DIR$/snowy-plugin/snowy-plugin-client/snowy-plugin-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/snowy-plugin-api/snowy-plugin-client-api/snowy-plugin-client-api.iml" filepath="$PROJECT_DIR$/snowy-plugin-api/snowy-plugin-client-api/snowy-plugin-client-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/snowy-plugin/snowy-plugin-dev/snowy-plugin-dev.iml" filepath="$PROJECT_DIR$/snowy-plugin/snowy-plugin-dev/snowy-plugin-dev.iml" />
+      <module fileurl="file://$PROJECT_DIR$/snowy-plugin-api/snowy-plugin-dev-api/snowy-plugin-dev-api.iml" filepath="$PROJECT_DIR$/snowy-plugin-api/snowy-plugin-dev-api/snowy-plugin-dev-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/snowy-plugin/snowy-plugin-sys/snowy-plugin-sys.iml" filepath="$PROJECT_DIR$/snowy-plugin/snowy-plugin-sys/snowy-plugin-sys.iml" />
+      <module fileurl="file://$PROJECT_DIR$/snowy-plugin-api/snowy-plugin-sys-api/snowy-plugin-sys-api.iml" filepath="$PROJECT_DIR$/snowy-plugin-api/snowy-plugin-sys-api/snowy-plugin-sys-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/snowy-web-app/snowy-web-app.iml" filepath="$PROJECT_DIR$/snowy-web-app/snowy-web-app.iml" />
+    </modules>
+  </component>
+</project>

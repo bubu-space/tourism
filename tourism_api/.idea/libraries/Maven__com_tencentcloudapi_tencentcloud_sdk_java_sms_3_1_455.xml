@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.tencentcloudapi:tencentcloud-sdk-java-sms:3.1.455">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/tencentcloudapi/tencentcloud-sdk-java-sms/3.1.455/tencentcloud-sdk-java-sms-3.1.455.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/tencentcloudapi/tencentcloud-sdk-java-sms/3.1.455/tencentcloud-sdk-java-sms-3.1.455-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/tencentcloudapi/tencentcloud-sdk-java-sms/3.1.455/tencentcloud-sdk-java-sms-3.1.455-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

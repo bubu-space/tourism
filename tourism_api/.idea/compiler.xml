@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="snowy-plugin-auth-api" />
+        <module name="snowy-plugin-sys" />
+        <module name="snowy-plugin-sys-api" />
+        <module name="snowy-web-app" />
+        <module name="snowy-plugin-dev" />
+        <module name="snowy-plugin-biz" />
+        <module name="snowy-plugin-client" />
+        <module name="snowy-plugin-client-api" />
+        <module name="snowy-plugin-biz-api" />
+        <module name="snowy-common" />
+        <module name="snowy-plugin-auth" />
+        <module name="snowy-plugin-dev-api" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="snowy" target="1.8" />
+      <module name="snowy-common" target="1.8" />
+      <module name="snowy-plugin" target="1.8" />
+      <module name="snowy-plugin-api" target="1.8" />
+      <module name="snowy-plugin-auth" target="1.8" />
+      <module name="snowy-plugin-auth-api" target="1.8" />
+      <module name="snowy-plugin-biz" target="1.8" />
+      <module name="snowy-plugin-biz-api" target="1.8" />
+      <module name="snowy-plugin-client" target="1.8" />
+      <module name="snowy-plugin-client-api" target="1.8" />
+      <module name="snowy-plugin-dev" target="1.8" />
+      <module name="snowy-plugin-dev-api" target="1.8" />
+      <module name="snowy-plugin-sys" target="1.8" />
+      <module name="snowy-plugin-sys-api" target="1.8" />
+      <module name="snowy-web-app" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="snowy-common" options="-parameters" />
+      <module name="snowy-plugin-auth" options="-parameters" />
+      <module name="snowy-plugin-auth-api" options="-parameters" />
+      <module name="snowy-plugin-biz" options="-parameters" />
+      <module name="snowy-plugin-biz-api" options="-parameters" />
+      <module name="snowy-plugin-client" options="-parameters" />
+      <module name="snowy-plugin-client-api" options="-parameters" />
+      <module name="snowy-plugin-dev" options="-parameters" />
+      <module name="snowy-plugin-dev-api" options="-parameters" />
+      <module name="snowy-plugin-sys" options="-parameters" />
+      <module name="snowy-plugin-sys-api" options="-parameters" />
+      <module name="snowy-web-app" options="-parameters" />
+    </option>
+  </component>
+</project>
