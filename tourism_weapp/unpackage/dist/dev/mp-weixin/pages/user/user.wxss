@@ -1,0 +1,44 @@
+.card-user {
+  background: linear-gradient(to bottom, #01C176, #06D964);
+  color: #FFF;
+  padding: 50px 20px 30px 16px;
+}
+.card-user .pageTitle {
+  font-size: 16px;
+  text-align: center;
+}
+.card-user .user_info {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.card-user .user_info .nickname {
+  font-size: 18px;
+}
+.card-user .user_info .nickname .cuIcon-right {
+  font-size: 14px;
+  margin-left: 10px;
+}
+.card-user .user_info .phone {
+  font-size: 14px;
+  margin-top: 10px;
+}
+.card-user .user_info .avatar {
+  font-size: 40px;
+  color: #01C176;
+  text-align: center;
+}
+.card-user .user_info .avatar image {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+}
+.cu-list {
+  margin: 0 !important;
+  margin-top: 10px !important;
+}
+.card-menu {
+  border-radius: 0 !important;
+}
+

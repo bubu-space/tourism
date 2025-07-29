@@ -1,0 +1,1 @@
+<view><text class="h2">{{detail.title}}</text><text class="weaktext">{{"发布时间："+detail.createTime}}</text><view class="divide margin-bottom-xl"></view><rich-text nodes="{{detail.content}}"></rich-text></view>

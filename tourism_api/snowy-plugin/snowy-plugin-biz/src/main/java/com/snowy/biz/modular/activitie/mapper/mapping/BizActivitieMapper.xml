@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.snowy.biz.modular.activitie.mapper.BizActivitieMapper">
+
+    <resultMap id="getspotactive" type="com.snowy.biz.modular.activitie.entity.BizActivitie">
+        <result property="image" column="image" typeHandler="com.snowy.biz.modular.spot.converter.SpotImageTypeHandler"></result>
+    </resultMap>
+
+    <select id="selectPageWithSpotName" resultMap="getspotactive">
+        SELECT a.*, s.spot_name as spot_name,u.name as createUserName
+        FROM biz_activitie a
+        LEFT JOIN biz_spot s ON a.spot_id = s.id
+        LEFT JOIN sys_user u  on a.create_user = u.id
+        where a.delete_flag = 'NOT_DELETE'
+
+            <if test="params.spotId != null">
+                AND a.spot_id = #{params.spotId}
+            </if>
+            <if test="params.title != null">
+                AND a.title LIKE CONCAT('%', #{params.title}, '%')
+            </if>
+
+        <if test="params.sortField != null and params.sortOrder != null">
+            ORDER BY ${params.sortField} ${params.sortOrder}
+        </if>
+    </select>
+
+
+    <select id="getinfo" resultMap="getspotactive">
+
+        SELECT a.*, s.spot_name as spot_name,u.name as createUserName
+        FROM biz_activitie a
+        LEFT JOIN biz_spot s ON a.spot_id = s.id
+        LEFT JOIN sys_user u  on a.create_user = u.id
+        where a.delete_flag = 'NOT_DELETE' and a.id = #{id}
+
+    </select>
+
+</mapper>

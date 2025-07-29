@@ -1,0 +1,11 @@
+page {
+  padding: 20px;
+}
+.list {
+  margin-top: 50px;
+  background-color: #bcd7ee;
+  padding: 10px;
+  border-radius: 6px;
+  gap: 14px;
+}
+

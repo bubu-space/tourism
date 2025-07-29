@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "订单评论",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "uni-rate": "/uni_modules/uni-rate/components/uni-rate/uni-rate"
+  }
+}

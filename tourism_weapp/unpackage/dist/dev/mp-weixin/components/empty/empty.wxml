@@ -1,0 +1,1 @@
+<view class="flex align-center justify-center flex-direction" style="height:400px;"><image style="width:120px;height:50px;" src="/static/images/empty.png"></image><text class="text-grey margin-top-xl">暂无数据</text></view>

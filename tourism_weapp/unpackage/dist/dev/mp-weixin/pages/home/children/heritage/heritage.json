@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "文化遗产",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "empty": "/components/empty/empty"
+  }
+}

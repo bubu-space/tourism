@@ -1,0 +1,4 @@
+.uni-date-x--border {
+  border: none !important;
+}
+

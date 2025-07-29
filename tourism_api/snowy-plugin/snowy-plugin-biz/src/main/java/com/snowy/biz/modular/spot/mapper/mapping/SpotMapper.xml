@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.snowy.biz.modular.spot.mapper.SpotMapper">
+
+    <resultMap id="spot" type="com.snowy.biz.modular.spot.entity.Spot">
+
+        <result column="images" property="images" typeHandler="com.snowy.biz.modular.spot.converter.SpotImageListTypeHandler" />
+        <result column="cover" property="cover" typeHandler="com.snowy.biz.modular.spot.converter.SpotImageTypeHandler" />
+        <result column="spot_tags" property="spotTags" typeHandler="com.baomidou.mybatisplus.extension.handlers.JacksonTypeHandler"/>
+
+    </resultMap>
+
+    <select id="getOrderByspotName" resultType="com.snowy.biz.modular.spot.entity.Spot">
+        SELECT bs.id as id ,bs.spot_name as spot_name FROM biz_order bo
+                LEFT JOIN biz_ticket bt on bo.ticket_id = bt.id
+                LEFT JOIN biz_spot bs on bt.spot_id = bs.id
+        WHERE bo.id = #{orderId};
+    </select>
+    <select id="spotBook" resultMap="spot">
+        SELECT *,
+               (ifnull((SELECT min(price) FROM biz_ticket WHERE spot_id = biz_spot.id and biz_ticket.delete_flag = 'NOT_DELETE' ),0))as minPrice
+        FROM biz_spot
+        WHERE delete_flag = 'NOT_DELETE'
+            <if test="spotName != null and spotName != ''">
+                and spot_name like concat('%',#{spotName},'%')
+            </if>
+        order by rate desc
+    </select>
+</mapper>

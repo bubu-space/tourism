@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.snowy.biz.modular.comment.mapper.BizCommentMapper">
+
+    <select id="select" resultType="com.snowy.biz.modular.comment.result.PageComment">
+
+        SELECT
+            c.*,
+            t.spot_id as spot_id
+        FROM biz_comment c
+        JOIN biz_order o ON c.order_id = o.id
+        JOIN biz_ticket t ON o.ticket_id = t.id
+        where c.delete_flag = 'NOT_DELETE'
+        <if test="bizCommentPageParam.orderId != null">
+            AND c.order_id = #{orderId}
+        </if>
+        <if test="bizCommentPageParam.spotId != null">
+            AND t.spot_id = #{bizCommentPageParam.spotId}
+        </if>
+
+        ORDER BY c.create_time DESC
+    </select>
+
+    <select id="selectForC" resultType="com.snowy.biz.modular.comment.result.PageComment">
+        SELECT c.*,t.spot_id as spot_id
+        FROM biz_comment c
+        JOIN biz_order o ON c.order_id = o.id
+        JOIN biz_ticket t ON o.ticket_id = t.id
+        where c.delete_flag = 'NOT_DELETE'
+        <if test="bizCommentPageParam.orderId != null">
+            AND c.order_id = #{orderId}
+        </if>
+        <if test="bizCommentPageParam.spotId != null">
+            AND t.spot_id = #{bizCommentPageParam.spotId}
+        </if>
+        AND c.audit=1
+        ORDER BY c.create_time DESC
+    </select>
+    <select id="getCommentInfo" resultType="com.snowy.biz.modular.comment.entity.BizComment">
+        select c.*,u.name as userName,u.avatar as userAvatar from biz_user u,biz_comment c where u.id=c.user_id and c.id=#{id}
+    </select>
+    <select id="getSpotScore" resultType="java.lang.Double">
+        SELECT AVG(bc.score)
+        FROM biz_comment bc
+                 JOIN biz_order bo ON bc.order_id = bo.id
+                 JOIN biz_ticket bt ON bo.ticket_id = bt.id
+        WHERE bt.spot_id = #{spotId};
+
+    </select>
+    <select id="getRatingCount" resultType="java.lang.Integer">
+        SELECT COUNT(bc.id)
+        FROM biz_comment bc
+                 JOIN biz_order bo ON bc.order_id = bo.id
+                 JOIN biz_ticket bt ON bo.ticket_id = bt.id
+        WHERE bt.spot_id = #{spotId};
+    </select>
+
+</mapper>

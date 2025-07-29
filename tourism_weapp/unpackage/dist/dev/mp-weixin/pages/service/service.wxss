@@ -1,0 +1,47 @@
+@charset "UTF-8";
+page {
+  padding: 14px;
+}
+.guide_container {
+  margin-top: 10px;
+  color: #fff;
+  background-color: #f0f0f0;
+  /* 网格项背景色，可以根据需要调整 */
+  padding: 10px;
+  border-radius: 6px;
+  flex: 1;
+  background: linear-gradient(to right, #2996FD, #44BAFA);
+}
+.guide_container .h3 {
+  font-size: 17px;
+}
+.haibao {
+  width: 100%;
+  height: 120px;
+  border-radius: 10px;
+}
+.title {
+  margin: 14px 0;
+}
+.card_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 16px;
+}
+.card_container .item {
+  border-radius: 4px;
+  padding: 10px;
+  color: #FFF;
+  display: grid;
+  grid-template-columns: 1fr 40px;
+  align-items: center;
+}
+.card_container .item view:nth-child(2) {
+  background-color: rgba(255, 255, 255, 0.2);
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+}
+

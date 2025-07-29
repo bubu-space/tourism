@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.snowy.biz.modular.order.mapper.BizTicketOrderMapper">
+
+    <select id="weekview" resultType="com.snowy.biz.modular.dashboard.result.SalesTrend">
+        SELECT a.clickDate as date,ifnull(b.ticketcount,0) as ticketcount,ifnull(b.ticketprice,0) as ticketprice
+        FROM
+            (
+                SELECT curdate() as clickDate
+                union all
+                SELECT date_sub(curdate(), interval 1 day) as clickDate
+                union all
+                SELECT date_sub(curdate(), interval 2 day) as clickDate
+                union all
+                SELECT date_sub(curdate(), interval 3 day) as clickDate
+                union all
+                SELECT date_sub(curdate(), interval 4 day) as clickDate
+                union all
+                SELECT date_sub(curdate(), interval 5 day) as clickDate
+                union all
+                SELECT date_sub(curdate(), interval 6 day) as clickDate
+                union all
+                SELECT date_sub(curdate(), interval 7 day) as clickDate
+                union all
+                SELECT date_sub(curdate(), interval 8 day) as clickDate
+                union all
+                SELECT date_sub(curdate(), interval 9 day) as clickDate
+                union all
+                SELECT date_sub(curdate(), interval 10 day) as clickDate
+                union all
+                SELECT date_sub(curdate(), interval 11 day) as clickDate
+                union all
+                SELECT date_sub(curdate(), interval 12 day) as clickDate
+                union all
+                SELECT date_sub(curdate(), interval 13 day) as clickDate
+            ) a LEFT JOIN
+            (
+                SELECT DATE(create_time) as datetime,SUM(ticket_count) as ticketcount ,SUM(price) as ticketprice
+                FROM biz_order
+                WHERE ticket_id in
+                      (
+                          SELECT  id FROM biz_ticket WHERE biz_ticket.spot_id = #{id}
+                      )
+                GROUP BY DATE(create_time)
+            ) b on a.clickDate = b.datetime
+    </select>
+
+    <resultMap id="BizOrder" type="com.snowy.biz.modular.order.entity.BizOrder">
+        <result column="spotimage" property="spotimage" typeHandler="com.snowy.biz.modular.spot.converter.SpotImageTypeHandler"/>
+    </resultMap>
+    <select id="spotImagepage" resultMap="BizOrder">
+        SELECT
+            bo.*,bs.cover as spotimage
+        FROM
+            biz_order AS bo
+                LEFT JOIN biz_ticket AS bt ON bo.ticket_id = bt.id
+                LEFT JOIN biz_spot AS bs ON bs.id = bt.spot_id
+        WHERE
+            bo.delete_flag = 'NOT_DELETE' and bo.user_id = #{bizTicketOrderPageParam.userId}
+            <if test="bizTicketOrderPageParam.status != null and bizTicketOrderPageParam.status  != ''">
+                and bo.status = #{bizTicketOrderPageParam.status}
+            </if>
+        order by bo.create_time desc
+    </select>
+</mapper>
